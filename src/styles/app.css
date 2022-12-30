@@ -1,0 +1,5 @@
+.movie__card-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
