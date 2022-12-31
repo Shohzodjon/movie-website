@@ -1,23 +1,20 @@
 import "../styles/movie-card.css";
-
+import { Link } from "react-router-dom";
 const MovieCard = ({ data }) => {
   return (
-    <div className="movie__card">
-      <div className="card__img">
-        <img src={data.poster} alt={data.cardType} />
-      </div>
-      <div className="card__info">
-        <div className="info__header">
-          <h3>{data.title}</h3>
-          <span>{data.year}</span>
+    <Link to={`/movie/:${data.id}`}>
+      <div className="movie__card">
+        <div className="card__img">
+          <img src={data.poster} alt={data.cardType} />
         </div>
-        <ul className="card__geners">
-          {data.genres.map((item) => (
-            <li key={item.id}>{item.title}</li>
-          ))}
-        </ul>
+        <div className="card__info">
+          <div className="info__header">
+            <h3>{data.title}</h3>
+            <span>{data.year}</span>
+          </div>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 export default MovieCard;
