@@ -26,3 +26,15 @@ h4 {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 370px) and (max-width: 1299px) {
+  .container {
+    width: 100% !important;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}

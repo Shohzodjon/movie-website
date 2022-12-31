@@ -1,4 +1,8 @@
+.home__page {
+  padding-bottom: 20px;
+}
 .movie__card-flex {
+  margin-bottom: 20px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -26,4 +30,33 @@
 .active-page {
   border-color: aqua;
   color: aqua;
+}
+
+@media screen and (min-width: 370px) and (max-width: 576px) {
+  .movie__card-flex {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .movie__card-flex {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .movie__card-flex {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 10px;
+  }
 }

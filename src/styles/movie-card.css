@@ -38,22 +38,15 @@
   border-radius: 4px;
   font-size: 14px;
 }
-.card__geners {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  row-gap: 5px;
-  flex-wrap: wrap;
-}
-.card__geners li {
-  font-size: 14px;
-  font-weight: 500;
-  color: crimson;
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .movie__card {
+    width: 270px;
+  }
 }
 
-.panginationComp {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px;
-  background: red;
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .movie__card {
+    width: 248px;
+  }
 }

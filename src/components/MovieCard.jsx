@@ -1,5 +1,6 @@
 import "../styles/movie-card.css";
 import { Link } from "react-router-dom";
+// { data }
 const MovieCard = ({ data }) => {
   return (
     <Link to={`/movie/:${data.id}`}>

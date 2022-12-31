@@ -25,7 +25,7 @@ const Home = () => {
   }, [page]);
 
   return (
-    <div>
+    <div className="home__page">
       <div className="movie__card-flex">
         {list.map((item) => (
           <MovieCard data={item} key={item.id} />
